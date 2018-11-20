@@ -37,6 +37,9 @@ gem 'bootstrap', '~> 4.1.3'
 # Use jQuery to support Bootstrap
 gem 'jquery-rails'
 
+# OAuth clients
+gem 'oauth', '~> 0.5.4'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
