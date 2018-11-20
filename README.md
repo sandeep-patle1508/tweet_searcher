@@ -32,3 +32,9 @@ EDITOR=vim rails credentials:edit
 ```sh
 bundle exec rspec
 ```
+
+## Run in local
+```sh
+rails s
+```
+Visit http://localhost:3000
