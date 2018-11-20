@@ -30,7 +30,7 @@ module Twitter
 
       if response
         response.fetch('statuses', []).collect do |tweet|
-          @collection << Tweet.new(tweet['id'], tweet['text'], tweet['in_reply_to_screen_name'], tweet['created_at'])
+          @collection << Tweet.new(tweet['id'], tweet['text'], tweet['user']['screen_name'], tweet['created_at'])
         end
       end
       

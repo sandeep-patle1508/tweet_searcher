@@ -5,14 +5,16 @@
         <th>Tweet ID</th>
         <th>User Name</th>
         <th>Text</th>
+        <th>Date</th>
       </tr>
     </thead>
     <tbody>
       <% @tweets.each do |tweet| %>
         <tr>
           <td><%= tweet.tweet_id %></td>
-          <td><%= tweet.in_reply_to_screen_name %></td>
+          <td><%= tweet.user_screen_name %></td>
           <td><%= tweet.text %></td>
+          <td><%= tweet.created_at %></td>
         </tr>
       <% end %>
     </tbody>
