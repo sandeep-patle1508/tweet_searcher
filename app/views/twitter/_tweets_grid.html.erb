@@ -1,0 +1,22 @@
+<% if @tweets.present? %>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Tweet ID</th>
+        <th>User Name</th>
+        <th>Text</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @tweets.each do |tweet| %>
+        <tr>
+          <td><%= tweet.tweet_id %></td>
+          <td><%= tweet.in_reply_to_screen_name %></td>
+          <td><%= tweet.text %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p class="lead">No tweets to display</p>
+<% end %>

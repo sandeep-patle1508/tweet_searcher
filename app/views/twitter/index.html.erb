@@ -1,5 +1,9 @@
 <div class="starter-template">
   <p class="lead">Please enter text to get tweets</p>
-  
+
   <%= render partial: 'search_form' %>
+
+  <div id='tweets_grid' class='margin_top_10'>
+    <%= render partial: 'tweets_grid', locals: { tweets: @tweets } %>
+  </div>
 </div>
